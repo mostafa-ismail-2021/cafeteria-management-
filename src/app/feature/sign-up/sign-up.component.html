@@ -1,0 +1,47 @@
+<div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="../../../assets/images/singUp/signup-img.jpg" alt="" style="margin-top: 80px;">
+                </div>
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>student registration form</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">_id</label>
+                                <input type="text" [(ngModel)]="newUser.userId" name="name" id="name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="father_name">name</label>
+                                <input type="text" [(ngModel)]="newUser.userName" name="father_name" id="father_name" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">password :</label>
+                            <input type="text" [(ngModel)]="newUser.userPassword" name="address" id="address" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth_date">phone</label>
+                            <input type="text" [(ngModel)]="newUser.userPhone" name="birth_date" id="birth_date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pincode">roomNumber</label>
+                            <input type="text" [(ngModel)]="newUser.roomNumber" name="pincode" id="pincode" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">image</label>
+                            <div class="form-select">
+                                <input type="text" [(ngModel)]="newUser.userImage" name="pincode" id="pincode" required>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <button (click)="saveUser()" class="submit" name="submit" id="submit">Submit Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
